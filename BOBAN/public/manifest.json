@@ -1,5 +1,5 @@
 {
-  "name": "BOBAN - Next.js PWA",
+  "name": "BOBAN",
   "short_name": "BOBAN",
   "description": "A Next.js application with PWA capabilities, Tailwind CSS, and Vite integration",
   "theme_color": "#000000",
