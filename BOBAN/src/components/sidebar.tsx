@@ -3,7 +3,6 @@ import { Grid3X3, FileText, Download, X } from "lucide-react";
 import { BsFillCollectionPlayFill } from "react-icons/bs";
 import { MdOutlinePlaylistPlay } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
-import { FaGooglePlay } from "react-icons/fa6";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -46,70 +45,97 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
             </div>
           </div>
           <button
-            className="lg:hidden text-white p-2 absolute top-0 right-0"
+            className="lg:hidden p-2 absolute top-0 right-0"
             onClick={onClose}
+            style={{ color: "#FF841F" }}
           >
-            <X className="w-6 h-6" />
+            <X className="w-6 h-6" style={{ color: "#FF841F" }} />
           </button>
         </div>
 
         <nav className="space-y-6">
           <div className="grid grid-cols-2 gap-3 lg:gap-4 ">
             <div className="text-center p-2 lg:p-3 rounded-lg hover:bg-slate-600 transition-colors cursor-pointer">
-              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded mx-auto mb-1 flex items-center justify-center">
-                <Grid3X3 className="w-6 h-6 lg:w-7 lg:h-7 text-green-500" />
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded mx-auto mb-1 flex items-center justify-center">
+                <Grid3X3
+                  className="w-7 h-7 lg:w-8 lg:h-8"
+                  style={{ color: "#1CB06D" }}
+                />
               </div>
-              <p className="text-xs text-green-500">Organization</p>
+              <p className="text-xs" style={{ color: "#34AC6A" }}>
+                Organization
+              </p>
             </div>
             <div className="text-center p-2 lg:p-3 rounded-lg">
-              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded mx-auto mb-1 flex items-center justify-center">
-                <BsFillCollectionPlayFill className="w-6 h-6 lg:w-7 lg:h-7 text-orange-500" />
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded mx-auto mb-1 flex items-center justify-center">
+                <BsFillCollectionPlayFill
+                  className="w-7 h-7 lg:w-8 lg:h-8"
+                  style={{ color: "#FF841F" }}
+                />
               </div>
-              <p className="text-xs text-orange-500">Library</p>
+              <p className="text-xs" style={{ color: "#FF841F" }}>
+                Library
+              </p>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3 lg:gap-4">
             <div className="text-center p-2 lg:p-3 rounded-lg hover:bg-slate-600 transition-colors cursor-pointer">
-              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded mx-auto mb-1 flex items-center justify-center">
-                <MdOutlinePlaylistPlay className="w-6 h-6 lg:w-7 lg:h-7 text-green-500" />
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded mx-auto mb-1 flex items-center justify-center">
+                <MdOutlinePlaylistPlay
+                  className="w-7 h-7 lg:w-8 lg:h-8"
+                  style={{ color: "#1CB06D" }}
+                />
               </div>
-              <p className="text-xs text-green-500">Playlist</p>
+              <p className="text-xs" style={{ color: "#34AC6A" }}>
+                Playlist
+              </p>
             </div>
             <div className="text-center p-2 lg:p-3 rounded-lg hover:bg-slate-600 transition-colors cursor-pointer">
-              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded mx-auto mb-1 flex items-center justify-center">
-                <Download className="w-6 h-6 lg:w-7 lg:h-7 text-green-500" />
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded mx-auto mb-1 flex items-center justify-center">
+                <Download
+                  className="w-7 h-7 lg:w-8 lg:h-8"
+                  style={{ color: "#1CB06D" }}
+                />
               </div>
-              <p className="text-xs text-green-500">Packs</p>
+              <p className="text-xs" style={{ color: "#34AC6A" }}>
+                Packs
+              </p>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3 lg:gap-4">
             <div className="text-center p-2 lg:p-3 rounded-lg hover:bg-slate-600 transition-colors cursor-pointer">
-              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded mx-auto mb-1 flex items-center justify-center">
-                <FileText className="w-6 h-6 lg:w-7 lg:h-7 text-green-500" />
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded mx-auto mb-1 flex items-center justify-center">
+                <FileText
+                  className="w-7 h-7 lg:w-8 lg:h-8"
+                  style={{ color: "#1CB06D" }}
+                />
               </div>
-              <p className="text-xs text-green-500">Plans</p>
+              <p className="text-xs" style={{ color: "#34AC6A" }}>
+                Plans
+              </p>
             </div>
             <div className="text-center p-2 lg:p-3 rounded-lg hover:bg-slate-600 transition-colors cursor-pointer">
-              <div className="w-6 h-6 lg:w-8 lg:h-8 rounded mx-auto mb-1 flex items-center justify-center">
-                <CgProfile className="w-6 h-6 lg:w-7 lg:h-7 text-green-500" />
+              <div className="w-8 h-8 lg:w-10 lg:h-10 rounded mx-auto mb-1 flex items-center justify-center">
+                <CgProfile
+                  className="w-7 h-7 lg:w-8 lg:h-8"
+                  style={{ color: "#1CB06D" }}
+                />
               </div>
-              <p className="text-xs text-green-500">Profile</p>
+              <p className="text-xs" style={{ color: "#34AC6A" }}>
+                Profile
+              </p>
             </div>
           </div>
         </nav>
 
         <div className="mt-12 text-center">
-          <div className="text-teal-400 font-bold text-4xl leading-none">
-            amazing
-          </div>
-          <div className="text-teal-400 font-bold text-4xl leading-none -mt-1">
-            play
-          </div>
-          <div className="mt-4">
-            <FaGooglePlay className="w-8 h-8 text-teal-400 mx-auto" />
-          </div>
+          <img
+            src="/play.png"
+            alt="Amazing Play"
+            className="mx-auto w-40 sm:w-44 lg:w-48 xl:w-52 h-auto"
+          />
         </div>
       </div>
     </div>

@@ -15,13 +15,19 @@ export default function Header({ onMenuClick }: HeaderProps) {
         </button>
         <div>
           <h1 className="text-3xl lg:text-4xl text-gray-900">Media Library</h1>
-          <p className="text-sm lg:text-base text-gray-600 hidden sm:block">
+          <p
+            className="text-sm lg:text-base hidden sm:block"
+            style={{ color: "#787878" }}
+          >
             Helps you to organize your media
           </p>
         </div>
       </div>
-      <button className="text-orange-500 hover:text-orange-600 text-sm lg:text-base flex items-center">
-        <LogOut className="w-4 h-4" />
+      <button
+        className="text-sm lg:text-base flex items-center"
+        style={{ color: "#FF841F" }}
+      >
+        <LogOut className="w-4 h-4" style={{ color: "#FF841F" }} />
         SIGN OUT
       </button>
     </div>

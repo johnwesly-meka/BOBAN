@@ -90,24 +90,59 @@ export default function MediaLibrary() {
   const getTypeIcon = (type: string) => {
     switch (type) {
       case "video":
-        return <Video className="w-5 h-5 text-green-500" />;
+        return (
+          <Video
+            className="w-5 h-5"
+            style={{ color: "#34AC6A", opacity: 0.5 }}
+          />
+        );
       case "audio":
-        return <Music2 className="w-5 h-5 text-green-500" />;
+        return (
+          <Music2
+            className="w-5 h-5"
+            style={{ color: "#34AC6A", opacity: 0.5 }}
+          />
+        );
       case "document":
-        return <Image className="w-5 h-5 text-green-500" />;
+        return (
+          <Image
+            className="w-5 h-5"
+            style={{ color: "#34AC6A", opacity: 0.5 }}
+          />
+        );
       default:
-        return <Play className="w-5 h-5 text-green-500" />;
+        return (
+          <Play
+            className="w-5 h-5"
+            style={{ color: "#34AC6A", opacity: 0.5 }}
+          />
+        );
     }
   };
 
   const getStatusIcon = (status: string) => {
     switch (status) {
       case "available":
-        return <CircleCheck className="w-5 h-5 text-green-500 stroke-2" />;
+        return (
+          <CircleCheck
+            className="w-5 h-5 stroke-2"
+            style={{ color: "#34AC6A", opacity: 0.5 }}
+          />
+        );
       case "processing":
-        return <Clock className="w-5 h-5 text-green-500 stroke-2" />;
+        return (
+          <Clock
+            className="w-5 h-5 stroke-2"
+            style={{ color: "#34AC6A", opacity: 0.5 }}
+          />
+        );
       default:
-        return <Clock className="w-5 h-5 text-green-500 stroke-2" />;
+        return (
+          <Clock
+            className="w-5 h-5 stroke-2"
+            style={{ color: "#34AC6A", opacity: 0.5 }}
+          />
+        );
     }
   };
 
@@ -148,17 +183,29 @@ export default function MediaLibrary() {
             {/* Controls */}
             <div className="flex flex-col sm:flex-row lg:flex-row lg:items-center justify-between mb-3 gap-3">
               <div className="px-2 sm:px-4 py-2 sm:py-3 rounded-lg">
-                <h2 className="text-lg sm:text-xl lg:text-2xl flex items-center gap-2 text-gray-500">
+                <h2
+                  className="text-lg sm:text-xl lg:text-2xl flex items-center gap-2"
+                  style={{ color: "#8C8C8C" }}
+                >
                   Your Media Libraries
-                  <Search className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 ml-2 sm:ml-4 lg:ml-10" />
+                  <Search
+                    className="w-4 h-4 sm:w-5 sm:h-5 ml-2 sm:ml-4 lg:ml-10"
+                    style={{ color: "#999999", opacity: 0.33 }}
+                  />
                 </h2>
               </div>
 
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 sm:gap-3 lg:gap-4 lg:ml-auto">
                 <div className="flex items-center justify-center sm:justify-start gap-3">
                   <div className="flex items-center gap-3 sm:gap-4">
-                    <List className="w-5 h-5 sm:w-6 sm:h-6 text-green-500" />
-                    <Grid3X3 className="w-5 h-5 sm:w-6 sm:h-6 text-green-500" />
+                    <List
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                      style={{ color: "#05B06C", opacity: 0.87 }}
+                    />
+                    <Grid3X3
+                      className="w-5 h-5 sm:w-6 sm:h-6"
+                      style={{ color: "#05B06C", opacity: 0.87 }}
+                    />
                   </div>
 
                   <button className="bg-green-500 text-white px-3 sm:px-3 lg:px-4 py-2 rounded-lg flex items-center gap-2 text-xs sm:text-sm lg:text-base">
@@ -240,8 +287,14 @@ export default function MediaLibrary() {
                         </div>
 
                         <div className="col-span-1 flex items-center">
-                          <button className="p-1 text-green-500 hover:text-green-600 -ml-2">
-                            <MoreVertical className="w-5 h-5" />
+                          <button
+                            className="p-1 -ml-2"
+                            style={{ color: "#34AC6A", opacity: 0.5 }}
+                          >
+                            <MoreVertical
+                              className="w-5 h-5"
+                              style={{ color: "#34AC6A", opacity: 0.5 }}
+                            />
                           </button>
                         </div>
                       </div>
@@ -281,8 +334,14 @@ export default function MediaLibrary() {
                                 <div className="flex items-center gap-1">
                                   {getStatusIcon(item.status)}
                                 </div>
-                                <button className="p-1 text-green-500 hover:text-green-600 -ml-2">
-                                  <MoreVertical className="w-5 h-5" />
+                                <button
+                                  className="p-1 -ml-2"
+                                  style={{ color: "#34AC6A", opacity: 0.5 }}
+                                >
+                                  <MoreVertical
+                                    className="w-5 h-5"
+                                    style={{ color: "#34AC6A", opacity: 0.5 }}
+                                  />
                                 </button>
                               </div>
                             </div>

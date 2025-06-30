@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import ServiceWorkerRegistration from "@/components/ServiceWorkerRegistration";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  display: "swap",
+  weight: ["400", "500", "700"],
+});
 
 export const metadata: Metadata = {
   title: "BOBAN - Media Library",
@@ -61,7 +66,7 @@ export default function RootLayout({
         <script src="/sw-patch.js" defer></script>
         <script src="/sw-register.js" defer></script>
       </head>
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <ServiceWorkerRegistration />
         {children}
       </body>
