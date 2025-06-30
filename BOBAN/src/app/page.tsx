@@ -177,12 +177,21 @@ export default function MediaLibrary() {
         </div>
 
         {/* Scrollable Content */}
-        <div className=" bg-green-50/70 flex-1 flex flex-col px-4 sm:px-5 lg:px-6 pb-2 sm:pb-3 lg:pb-4 min-h-0">
+        <div
+          className="flex-1 flex flex-col px-4 sm:px-5 lg:px-6 pb-2 sm:pb-3 lg:pb-4 min-h-0"
+          style={{ backgroundColor: "#F4FFF9" }}
+        >
           {/* Controls and Media List Container */}
-          <div className="bg-green-50/70 backdrop-blur-sm p-2 sm:p-3 lg:p-4 flex flex-col flex-1 min-h-0">
+          <div
+            className="backdrop-blur-sm p-2 sm:p-3 lg:p-4 flex flex-col flex-1 min-h-0"
+            style={{ backgroundColor: "#F4FFF9" }}
+          >
             {/* Controls */}
             <div className="flex flex-col sm:flex-row lg:flex-row lg:items-center justify-between mb-3 gap-3">
-              <div className="px-2 sm:px-4 py-2 sm:py-3 rounded-lg">
+              <div
+                className="px-2 sm:px-4 py-2 sm:py-3 rounded-lg"
+                style={{ backgroundColor: "#F4FFF9" }}
+              >
                 <h2
                   className="text-lg sm:text-xl lg:text-2xl flex items-center gap-2"
                   style={{ color: "#8C8C8C" }}
@@ -208,8 +217,14 @@ export default function MediaLibrary() {
                     />
                   </div>
 
-                  <button className="bg-green-500 text-white px-3 sm:px-3 lg:px-4 py-2 rounded-lg flex items-center gap-2 text-xs sm:text-sm lg:text-base">
-                    <TbLibraryPlus className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <button
+                    className="px-3 sm:px-3 lg:px-4 py-2 rounded-lg flex items-center gap-2 text-xs sm:text-sm lg:text-base"
+                    style={{ backgroundColor: "#F4FFF9", color: "#1CB06D" }}
+                  >
+                    <TbLibraryPlus
+                      className="w-3 h-3 sm:w-4 sm:h-4"
+                      style={{ color: "#1CB06D" }}
+                    />
                     <span className="hidden sm:inline">ADD MEDIA</span>
                     <span className="sm:hidden">ADD</span>
                   </button>
@@ -218,7 +233,10 @@ export default function MediaLibrary() {
             </div>
 
             {/* Media List */}
-            <div className="bg-green-50/70 rounded-lg border border-gray-100 flex flex-col flex-1 min-h-0">
+            <div
+              className="rounded-lg border border-gray-100 flex flex-col flex-1 min-h-0"
+              style={{ backgroundColor: "#F4FFF9" }}
+            >
               {/* Fixed Desktop Table Header */}
               <div className="hidden lg:grid grid-cols-12 gap-6 py-2 px-3 border-b border-gray-100 text-sm font-medium text-gray-400 uppercase tracking-wider flex-shrink-0">
                 <div className="col-span-1">#</div>
@@ -227,15 +245,15 @@ export default function MediaLibrary() {
                   <Filter className="w-3 h-3 cursor-pointer hover:text-gray-700 fill-current" />
                 </div>
                 <div className="col-span-1"></div>
-                <div className="col-span-3 flex items-center gap-2">
+                <div className="col-span-3 flex items-center gap-2 pl-0">
                   UPLOADED BY
                   <Filter className="w-3 h-3 cursor-pointer hover:text-gray-700 fill-current" />
                 </div>
-                <div className="col-span-1 flex items-center gap-2">
+                <div className="col-span-1 flex items-center gap-2 pl-0">
                   TYPE
                   <Filter className="w-3 h-3 cursor-pointer hover:text-gray-700 fill-current" />
                 </div>
-                <div className="col-span-2">STATUS</div>
+                <div className="col-span-2 flex items-center pl-0">STATUS</div>
                 <div className="col-span-1"></div>
               </div>
 
@@ -270,17 +288,17 @@ export default function MediaLibrary() {
 
                         <div className="col-span-1"></div>
 
-                        <div className="col-span-3 flex items-center">
+                        <div className="col-span-3 flex items-center pl-0">
                           <span className="text-gray-700">{item.author}</span>
                         </div>
 
-                        <div className="col-span-1 flex items-center">
+                        <div className="col-span-1 flex items-center pl-0">
                           <div className="flex items-center gap-2 text-gray-600">
                             {getTypeIcon(item.type)}
                           </div>
                         </div>
 
-                        <div className="col-span-2 flex items-center">
+                        <div className="col-span-2 flex items-center pl-0">
                           <div className="flex items-center">
                             {getStatusIcon(item.status)}
                           </div>

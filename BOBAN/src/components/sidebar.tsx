@@ -3,6 +3,7 @@ import { Grid3X3, FileText, Download, X } from "lucide-react";
 import { BsFillCollectionPlayFill } from "react-icons/bs";
 import { MdOutlinePlaylistPlay } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
+import { FaGooglePlay } from "react-icons/fa6";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -131,11 +132,18 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
         </nav>
 
         <div className="mt-12 text-center">
-          <img
-            src="/play.png"
-            alt="Amazing Play"
-            className="mx-auto w-40 sm:w-44 lg:w-48 xl:w-52 h-auto"
-          />
+          <div
+            style={{ color: "#1CB06D" }}
+            className="font-bold text-4xl leading-none"
+          >
+            amazing
+          </div>
+          <div
+            style={{ color: "#1CB06D" }}
+            className="font-bold text-4xl leading-none -mt-1"
+          >
+            play
+          </div>
         </div>
       </div>
     </div>
